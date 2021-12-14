@@ -3,11 +3,12 @@
 # https://www.geeksforgeeks.org/text-detection-and-extraction-using-opencv-and-ocr/
 
 import cv2
+import os
 
 def segment_image(filename):
 
     # Read image from which text needs to be extracted
-    img = cv2.imread(filename)
+    img = cv2.imread(f"Cropped_Images/{filename}.jpg")
     cv2.imshow("original", img)
 
     # Preprocessing
@@ -58,9 +59,12 @@ def segment_image(filename):
     cv2.imshow("boxed", im2)
 
     # save contours to new images
-    for i in range(100, 120):
+    path = f"Cropped_Contours/{filename}"
+    if not os.path.exists(path):
+        os.mkdir(path)
+    for i in range(len(contours)):
         x, y, width, height = cv2.boundingRect(contours[i])
         roi = thresh_img[y: y + height, x: x + width]
-        cv2.imwrite(f"contour{i}.png", roi)
+        cv2.imwrite(os.path.join(path, f"contour{i}.png"), roi)
 
     cv2.waitKey(0)
