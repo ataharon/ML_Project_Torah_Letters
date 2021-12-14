@@ -65,6 +65,6 @@ def segment_image(filename):
     for i in range(len(contours)):
         x, y, width, height = cv2.boundingRect(contours[i])
         roi = thresh_img[y: y + height, x: x + width]
-        cv2.imwrite(os.path.join(path, f"contour{i}.png"), roi)
+        #cv2.imwrite(os.path.join(path, f"contour{i}.png"), roi)
 
     cv2.waitKey(0)
