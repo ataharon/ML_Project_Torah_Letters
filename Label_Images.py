@@ -28,13 +28,17 @@ def label_contours(image):
                 except:
                     label = -2
 
-                #-1 = skip this contour
                 if label < -1 or label > 26:
                     print("Invalid input. Try again")
-                elif label != -1:
-                    writer_object.writerow([f"{image}/{contour_path}", label])
+
+                # -1 = skip this contour and delete image
+                elif label == -1:
+                    os.remove(f"{path}/{contour_path}")
                     break
+
+                #valid input: add to csv
                 else:
+                    writer_object.writerow([f"{image}/{contour_path}", label])
                     break
 
 label_contours("MOTB002")
