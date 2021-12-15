@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 def label_contours(image):
     n = int(input("Enter number of contour you're up to: "))
 
-    with open("contour_labels.csv", 'a') as f:
+    with open(f"contour_labels_{image}.csv", 'a') as f:
         writer_object = writer(f)
 
         path = f"Cropped_Contours/{image}"
