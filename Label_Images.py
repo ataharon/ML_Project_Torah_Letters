@@ -41,4 +41,4 @@ def label_contours(image):
                     writer_object.writerow([f"{image}/{contour_path}", label])
                     break
 
-label_contours("MOTB002")
+label_contours("MOTB003")
