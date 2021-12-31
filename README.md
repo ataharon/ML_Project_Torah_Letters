@@ -40,5 +40,7 @@ The final product, `Product.ipynb`, is an interactive notebook where the user ca
 The saved model will then predict which letter it is and display a bar graph representing the activations of each label.
 If the certainty of the label is below a certain threshold (the letter does not fit well into any category), the output indicates that this may be an anomalous letter.
 
+Recommended images for test use of the product, taken from Torahs outside of the training and validation sets, can be found in `Cropped_Contours/test_contours`, and examples of anomalous letters in `Cropped_Contours/Anomalous_Letters`.
+
 
 
