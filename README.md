@@ -30,9 +30,9 @@ An exploratory data analysis was conducted in `Data_Analysis.ipynb`, illustratin
 
 ## Model
 
-I built a neural network using the keras library. Specifications of the model can be seen in `Model.py`, and functions for prediction in `Predict.py`.
+I built a neural network using the keras library. Specifications of the model can be seen in `Model.py`, and functions for prediction in `Predict.py`. The model contains a flattening layer to transform the image pixels to a single dimension, a rescaling layer to normalize the values, a hidden dense layer, and a final layer of 27 neurons corresponding to the 27 possible classes. The class label is chosen based on the neuron with the highest activation.
 
-The model was evaluated in `Model_Metrics.ipynb` based on accuracy, illustrated by a confusion matrix.
+The model was evaluated in `Model_Metrics.ipynb` based on keras's built in accuracy metric, and the outcome is illustrated by a confusion matrix.
 
 ## Product
 
