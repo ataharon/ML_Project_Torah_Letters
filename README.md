@@ -4,7 +4,7 @@ Ayelet Aharon, COMP 3920 Semester Project
 ## Background
 
 There is a specialized area of research on the topic of Sifrei Torah (Torah scrolls). 
-Rabbi Ephraim Caspi, an Israeli scholar, is a leading researcher in this field. 
+Ephraim Caspi, an Israeli scholar, is a leading researcher in this field. 
 His goal is to classify Sifrei Torah based on unique qualities, such as column layout, letter shapes, and artistic flourishes. 
 The work done to classify the Torahs based on these features is largely technological. 
 However, to collect these features, each Sefer Torah is analyzed manually by scanning the letters and looking for abnormalities in the text. 
