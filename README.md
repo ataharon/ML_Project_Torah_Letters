@@ -37,7 +37,7 @@ The model was evaluated in `Model_Metrics.ipynb` based on keras's built in accur
 ## Product
 
 The final product, `Product.ipynb`, is an interactive notebook where the user can upload an image of a Torah letter. 
-The saved model will then predict which letter it is and display a bar graph representing the probabilities of each label.
+The saved model will then predict which letter it is and display a bar graph representing the activations of each label.
 If the certainty of the label is below a certain threshold (the letter does not fit well into any category), the output indicates that this may be an anomalous letter.
 
 
